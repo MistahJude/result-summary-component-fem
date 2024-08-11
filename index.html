@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="X & Github: mistahjude" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="author" content="X & Github: mistahjude">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/css/style.css">
+    <title>Frontend Mentor | Results Summary Component</title>
+  </head>
 
-  <title>Frontend Mentor | Results Summary Component</title>
-</head>
+  <body>
+    <div class="container">
+      <!-- Card -->
+      <div class="card">
+        <!--Card Result  -->
+        <div class="card-result">
+          <h3 class="heading result-heading">Your Result</h3>
+          <div class="result-circle">
+            <span>76</span>
+            <span>of 100</span>
+          </div>
 
-<body>
-
-  <div class="container">
-    
-    <!-- Card -->
-    <div class="card">
-      
-      <!--Card Result  -->
-      <div class="card-result">
-        <h3 class="heading result-heading">Your Result</h3>
-        <div class="result-circle">
-          <span>76</span>
-          <span>of 100</span>
+          <h3>Great</h3>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
         </div>
-        
-        <h3>Great</h3>
-        <p>You scored higher than 65% of the people who have taken these tests.</p>
-      </div>
-      
-      <!-- Card Summary -->
-      <div class="card-summary">
-        <h3 class="heading summary-heading">Summary</h3>
-        <div class="summary-activities">
-          <!-- Card Summary - Reaction -->
-          <div class="summary-activities-single reaction">
-            <div class="summary-activities-single__left">
-                <img src="/assets/images/icon-reaction.svg" alt="reaction">
-              <span class="text">Reaction</span>
+
+        <!-- Card Summary -->
+        <div class="card-summary">
+          <h3 class="heading summary-heading">Summary</h3>
+          <div class="summary-activities">
+            <!-- Card Summary - Reaction -->
+            <div class="summary-activities-single reaction">
+              <div class="summary-activities-single__left">
+                <img src="/assets/images/icon-reaction.svg" alt="reaction" />
+                <span class="text">Reaction</span>
+              </div>
+              <div class="summary-activities-single__right">
+                <span>80</span>
+                <span>/</span>
+                <span>100</span>
+              </div>
             </div>
-            <div class="summary-activities-single__right">
-              <span>80</span>
-              <span>/</span>
-              <span>100</span>
+
+            <!-- Card Summary - Memory -->
+            <div class="summary-activities-single memory">
+              <div class="summary-activities-single__left">
+                <img src="/assets/images/icon-memory.svg" alt="memory" />
+                <span class="text">Memory</span>
+              </div>
+              <div class="summary-activities-single__right">
+                <span>92</span>
+                <span>/</span>
+                <span>100</span>
+              </div>
             </div>
+
+            <!-- Card Summary - Verbal -->
+            <div class="summary-activities-single verbal">
+              <div class="summary-activities-single__left">
+                <img src="/assets/images/icon-verbal.svg" alt="verbal" />
+                <span class="text">Verbal</span>
+              </div>
+              <div class="summary-activities-single__right">
+                <span>61</span>
+                <span>/</span>
+                <span>100</span>
+              </div>
+            </div>
+
+            <!-- Card Summary - Visual -->
+            <div class="summary-activities-single visual">
+              <div class="summary-activities-single__left">
+                <img src="/assets/images/icon-visual.svg" alt="visual" />
+                <span class="text">Visual</span>
+              </div>
+              <div class="summary-activities-single__right">
+                <span>72</span>
+                <span>/</span>
+                <span>100</span>
+              </div>
+            </div>
+
+            <button class="button">Continue</button>
           </div>
-          
-          <!-- Card Summary - Memory -->
-          <div class="summary-activities-single memory">
-            <div class="summary-activities-single__left">
-              <img src="/assets/images/icon-memory.svg" alt="memory">
-              <span class="text">Memory</span>
-            </div>
-            <div class="summary-activities-single__right">
-              <span>92</span>
-              <span>/</span>
-              <span>100</span>
-            </div>
-          </div>
-          
-          <!-- Card Summary - Verbal -->
-          <div class="summary-activities-single verbal">
-            <div class="summary-activities-single__left">
-              <img src="/assets/images/icon-verbal.svg" alt="verbal">
-              <span class="text">Verbal</span>
-            </div>
-            <div class="summary-activities-single__right">
-              <span>61</span>
-              <span>/</span>
-              <span>100</span>
-            </div>
-          </div>
-          
-          <!-- Card Summary - Visual -->
-          <div class="summary-activities-single visual">
-            <div class="summary-activities-single__left">
-              <img src="/assets/images/icon-visual.svg" alt="visual">
-              <span class="text">Visual</span>
-            </div>
-            <div class="summary-activities-single__right">
-              <span>72</span>
-              <span>/</span>
-              <span>100</span>
-            </div>
-          </div>
-          
-          <button class="button">Continue</button>
         </div>
       </div>
     </div>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/mistahjude" target="_blank">Jude Nwafor</a>.
-    </div>
-  </footer>
-</body>
-
+  </body>
 </html>

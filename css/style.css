@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'HankenGrotesk';
+  font-family: "HankenGrotesk";
   src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
@@ -17,29 +17,42 @@ png {
 
 /* General */
 body {
-  font-family: 'HankenGrotesk';
+  font-family: "HankenGrotesk";
   max-width: 100%;
-  min-height: 100vh;
 }
 
 .container {
-  width: 900px;
-  max-width: 100%;
-  margin: 0;
+  width: 98%;
+  max-width: 900px;
+  margin: 10rem auto 10rem;
 }
 
 /*Card*/
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.03);
+}
 
+.card > div {
+  width: 60%;
+}
 
 /*Card - Result*/
 .card-result {
-  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  padding: 2em;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
-  border-radius: 0 0 2rem 2rem;
+  gap: 2rem;
+  border-radius: 2rem;
   color: hsl(0, 0%, 100%);
 }
 
@@ -56,7 +69,11 @@ h3 {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,11 +102,7 @@ h3 {
 }
 
 .summary-heading {
-  color: hsl(224, 30%, 27%);;
-}
-
-.summary-activities {
-  
+  color: hsl(224, 30%, 27%);
 }
 
 .summary-activities-single {
@@ -100,7 +113,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .summary-activities-single__left {
@@ -108,7 +121,8 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
+  font-weight: 600;
 }
 
 .reaction {
@@ -145,7 +159,6 @@ h3 {
 
 .summary-activities-single__right {
   color: hsl(224, 30%, 27%);
-  opacity: 0.8;
 }
 
 .summary-activities-single__right span:first-child {
@@ -158,35 +171,40 @@ h3 {
   width: 100%;
   padding: 1rem;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(241, 81%, 54%);
+  background-color: hsl(224, 30%, 27%);
   border-radius: 10rem;
   cursor: pointer;
+  border: none;
 }
 
-.button::hover,
-.button::focus-visible {
-  background-color: hsl(224, 30%, 27%);
+.button:hover,
+.button:focus-visible {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 
-/* Footer */
-.footer {
-  position: abdolute;
-  bottom: 0;
-}
+/* Media Query */
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.footer-attribution {
-  font-family: 'HankenGrotesk';
-  font-size: 11px;
-  text-align: center;
-  background: #f3f3f3;
-  padding: 1em;
-}
+  .card {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none;
+  }
 
-.footer-attribution a {
-  color: hsl(241, 81%, 54%);
-  text-decoration: none;
-}
+  .card > div {
+    width: 100%;
+  }
 
-/*
-@media screen and (max-width: 375px; ) {}
-*/
+  .card-result {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
